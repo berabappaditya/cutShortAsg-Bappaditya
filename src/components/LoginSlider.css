@@ -1,0 +1,56 @@
+.progressbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.progressbar li {
+  list-style-type: none;
+}
+
+.pointer {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+}
+.pointerEmpt {
+  border: 1px solid var(--boderSec);
+  color: var(--textSec);
+}
+.pointerFull {
+  border: 1px solid var(--purple);
+  background-color: var(--purple);
+  color: white;
+}
+
+.line {
+  width: 15%;
+  height: 1px;
+  display: block;
+}
+.lineEmpt {
+  background-image: linear-gradient(
+    to right,
+    var(--purple) 0%,
+    rgb(236, 228, 228) 0%
+  );
+}
+
+.lineHalf {
+  background-image: linear-gradient(
+    to right,
+    var(--purple) 50%,
+    rgb(236, 228, 228) 50%
+  );
+}
+
+.lineFull {
+  background-image: linear-gradient(
+    to right,
+    var(--purple) 100%,
+    rgb(236, 228, 228) 0%
+  );
+}
